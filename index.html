@@ -10,9 +10,10 @@
 </head>
 <body>
 <div id="app">
-
+<h2>Mailiing List</h2>
 <ul
-v-for="singleMail in mailAddresses">
+v-for="singleMail in mailAddresses"
+v-if="mailAddresses.length >= 10">
     <li>{{ singleMail }}</li>
 </ul>
     
